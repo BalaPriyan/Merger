@@ -198,14 +198,14 @@ async def start_handler(c: Client, m: Message):
             res = await m.reply_text(
                 text=f"Hi **{m.from_user.first_name}**\n\n 🛡️ Unfortunately you can't use me\n\n**Contact: 🈲 @{Config.OWNER_USERNAME}** ",
                 reply_markup=InlineKeyboardMarkup(
-                    [
-                        [
-                             InlineKeyboardButton("🗯 Channel", url="https://t.me/TomenBots"),
-                             InlineKeyboardButton("💬 Support", url="https://t.me/TomenSupport")
-                        ],[
-                             InlineKeyboardButton("Use Me Here", url="https://t.me/TomenLMGroup")
-                    ]
-                ),
+			[
+				[
+					InlineKeyboardButton("🗯 Channel", url="https://t.me/TomenBots"),
+					InlineKeyboardButton("💬 Support", url="https://t.me/TomenSupport")
+				],[
+					InlineKeyboardButton("Use Me Here", url="https://t.me/TomenLMGroup")]
+			]
+		),z
 		quote=True,
             )
             return
@@ -215,14 +215,16 @@ async def start_handler(c: Client, m: Message):
     res = await m.reply_text(
         text=f"Hi **{m.from_user.first_name}**\n\n ⚡ I am a file/video merger bot\n\n😎 I can merge Telegram files!, And upload it to telegram\n\n**Owner: 🈲 @{Config.OWNER_USERNAME}** ",
         reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                     InlineKeyboardButton("🗯 Channel", url="https://t.me/TomenBots"),
-                     InlineKeyboardButton("💬 Support", url="https://t.me/TomenSupport")
-                ],[
-                     InlineKeyboardButton("Use Me Here", url="https://t.me/TomenLMGroup")
-            ]
-        ),
+		[
+			[
+				InlineKeyboardButton("🗯 Channel", url="https://t.me/TomenBots"),
+				InlineKeyboardButton("💬 Support", url="https://t.me/TomenSupport")
+			],[
+				
+				InlineKeyboardButton("Use Me Here", url="https://t.me/TomenLMGroup")
+			]
+		]
+	),
 	quote=True,
     )
     del user
@@ -239,14 +241,15 @@ async def files_handler(c: Client, m: Message):
             res = await m.reply_text(
                 text=f"Hi **{m.from_user.first_name}**\n\n 🛡️ Unfortunately you can't use me\n\n**Contact: 🈲 @{Config.OWNER_USERNAME}** ",
                 reply_markup=InlineKeyboardMarkup(
-                    [
-                        [
-                             InlineKeyboardButton("🗯 Channel", url="https://t.me/TomenBots"),
-                             InlineKeyboardButton("💬 Support", url="https://t.me/TomenSupport")
-                        ],[
-                             InlineKeyboardButton("Use Me Here", url="https://t.me/TomenLMGroup")
-                    ]
-                ),
+			[
+				[
+					InlineKeyboardButton("🗯 Channel", url="https://t.me/TomenBots"),
+					InlineKeyboardButton("💬 Support", url="https://t.me/TomenSupport")
+				],[
+					InlineKeyboardButton("Use Me Here", url="https://t.me/TomenLMGroup")
+				]
+			]
+		),
 		quote=True,
             )
             return
@@ -515,10 +518,10 @@ async def about_handler(c: Client, m: Message):
         quote=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("👨‍💻Developer👨‍💻", url="https://t.me/yashoswalyo")],
+                [InlineKeyboardButton("👨‍💻Developer👨‍💻", url="https://t.me/TomenBots")],
                 [
                     InlineKeyboardButton(
-                        "🏘Source Code🏘", url="https://github.com/yashoswalyo/MERGE-BOT"
+                        "🏘Source Code🏘", url="https://github.com/BalaPriyan"
                     ),
                     InlineKeyboardButton(
                         "🤔Deployed By🤔", url=f"https://t.me/{Config.OWNER_USERNAME}"
